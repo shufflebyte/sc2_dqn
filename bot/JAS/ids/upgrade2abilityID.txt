@@ -1,0 +1,1045 @@
+jbr2: [upgrade_id: 0
+name: ""
+, upgrade_id: 1
+name: "CarrierLaunchSpeedUpgrade"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1280.0
+ability_id: 45
+, upgrade_id: 2
+name: "GlialReconstitution"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1760.0
+ability_id: 216
+, upgrade_id: 3
+name: "TunnelingClaws"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 217
+, upgrade_id: 4
+name: "ChitinousPlating"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 265
+, upgrade_id: 5
+name: "HiSecAutoTracking"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1280.0
+ability_id: 650
+, upgrade_id: 6
+name: "TerranBuildingArmor"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 2240.0
+ability_id: 651
+, upgrade_id: 7
+name: "TerranInfantryWeaponsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 652
+, upgrade_id: 8
+name: "TerranInfantryWeaponsLevel2"
+mineral_cost: 175
+vespene_cost: 175
+research_time: 3040.0
+ability_id: 653
+, upgrade_id: 9
+name: "TerranInfantryWeaponsLevel3"
+mineral_cost: 250
+vespene_cost: 250
+research_time: 3520.0
+ability_id: 654
+, upgrade_id: 10
+name: "NeosteelFrame"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1760.0
+ability_id: 655
+, upgrade_id: 11
+name: "TerranInfantryArmorsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 656
+, upgrade_id: 12
+name: "TerranInfantryArmorsLevel2"
+mineral_cost: 175
+vespene_cost: 175
+research_time: 3040.0
+ability_id: 657
+, upgrade_id: 13
+name: "TerranInfantryArmorsLevel3"
+mineral_cost: 250
+vespene_cost: 250
+research_time: 3520.0
+ability_id: 658
+, upgrade_id: 14
+name: "ReaperSpeed"
+mineral_cost: 50
+vespene_cost: 50
+research_time: 1600.0
+ability_id: 683
+, upgrade_id: 15
+name: "Stimpack"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2720.0
+ability_id: 730
+, upgrade_id: 16
+name: "ShieldWall"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1760.0
+ability_id: 731
+, upgrade_id: 17
+name: "PunisherGrenades"
+mineral_cost: 50
+vespene_cost: 50
+research_time: 960.0
+ability_id: 732
+, upgrade_id: 18
+name: "SiegeTech"
+, upgrade_id: 19
+name: "HighCapacityBarrels"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 761
+, upgrade_id: 20
+name: "BansheeCloak"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1760.0
+ability_id: 790
+, upgrade_id: 21
+name: "MedivacCaduceusReactor"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1280.0
+ability_id: 792
+, upgrade_id: 22
+name: "RavenCorvidReactor"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 793
+, upgrade_id: 23
+name: "HunterSeeker"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 796
+, upgrade_id: 24
+name: "DurableMaterials"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 797
+, upgrade_id: 25
+name: "PersonalCloaking"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1920.0
+ability_id: 820
+, upgrade_id: 26
+name: "GhostMoebiusReactor"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1280.0
+ability_id: 821
+, upgrade_id: 27
+name: "TerranVehicleArmorsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 852
+, upgrade_id: 28
+name: "TerranVehicleArmorsLevel2"
+mineral_cost: 175
+vespene_cost: 175
+research_time: 3040.0
+ability_id: 853
+, upgrade_id: 29
+name: "TerranVehicleArmorsLevel3"
+mineral_cost: 250
+vespene_cost: 250
+research_time: 3520.0
+ability_id: 854
+, upgrade_id: 30
+name: "TerranVehicleWeaponsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 855
+, upgrade_id: 31
+name: "TerranVehicleWeaponsLevel2"
+mineral_cost: 175
+vespene_cost: 175
+research_time: 3040.0
+ability_id: 856
+, upgrade_id: 32
+name: "TerranVehicleWeaponsLevel3"
+mineral_cost: 250
+vespene_cost: 250
+research_time: 3520.0
+ability_id: 857
+, upgrade_id: 33
+name: "TerranShipArmorsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 858
+, upgrade_id: 34
+name: "TerranShipArmorsLevel2"
+mineral_cost: 175
+vespene_cost: 175
+research_time: 3040.0
+ability_id: 859
+, upgrade_id: 35
+name: "TerranShipArmorsLevel3"
+mineral_cost: 250
+vespene_cost: 250
+research_time: 3520.0
+ability_id: 860
+, upgrade_id: 36
+name: "TerranShipWeaponsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 861
+, upgrade_id: 37
+name: "TerranShipWeaponsLevel2"
+mineral_cost: 175
+vespene_cost: 175
+research_time: 3040.0
+ability_id: 862
+, upgrade_id: 38
+name: "TerranShipWeaponsLevel3"
+mineral_cost: 250
+vespene_cost: 250
+research_time: 3520.0
+ability_id: 863
+, upgrade_id: 39
+name: "ProtossGroundWeaponsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 1062
+, upgrade_id: 40
+name: "ProtossGroundWeaponsLevel2"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 3040.0
+ability_id: 1063
+, upgrade_id: 41
+name: "ProtossGroundWeaponsLevel3"
+mineral_cost: 200
+vespene_cost: 200
+research_time: 3520.0
+ability_id: 1064
+, upgrade_id: 42
+name: "ProtossGroundArmorsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 1065
+, upgrade_id: 43
+name: "ProtossGroundArmorsLevel2"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 3040.0
+ability_id: 1066
+, upgrade_id: 44
+name: "ProtossGroundArmorsLevel3"
+mineral_cost: 200
+vespene_cost: 200
+research_time: 3520.0
+ability_id: 1067
+, upgrade_id: 45
+name: "ProtossShieldsLevel1"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 2560.0
+ability_id: 1068
+, upgrade_id: 46
+name: "ProtossShieldsLevel2"
+mineral_cost: 225
+vespene_cost: 225
+research_time: 3040.0
+ability_id: 1069
+, upgrade_id: 47
+name: "ProtossShieldsLevel3"
+mineral_cost: 300
+vespene_cost: 300
+research_time: 3520.0
+ability_id: 1070
+, upgrade_id: 48
+name: "ObserverGraviticBooster"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1280.0
+ability_id: 1093
+, upgrade_id: 49
+name: "GraviticDrive"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1280.0
+ability_id: 1094
+, upgrade_id: 50
+name: "ExtendedThermalLance"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 2240.0
+ability_id: 1097
+, upgrade_id: 51
+name: "HighTemplarKhaydarinAmulet"
+, upgrade_id: 52
+name: "PsiStormTech"
+mineral_cost: 200
+vespene_cost: 200
+research_time: 1760.0
+ability_id: 1126
+, upgrade_id: 53
+name: "ZergMeleeWeaponsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 1186
+, upgrade_id: 54
+name: "ZergMeleeWeaponsLevel2"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 3040.0
+ability_id: 1187
+, upgrade_id: 55
+name: "ZergMeleeWeaponsLevel3"
+mineral_cost: 200
+vespene_cost: 200
+research_time: 3520.0
+ability_id: 1188
+, upgrade_id: 56
+name: "ZergGroundArmorsLevel1"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 2560.0
+ability_id: 1189
+, upgrade_id: 57
+name: "ZergGroundArmorsLevel2"
+mineral_cost: 225
+vespene_cost: 225
+research_time: 3040.0
+ability_id: 1190
+, upgrade_id: 58
+name: "ZergGroundArmorsLevel3"
+mineral_cost: 300
+vespene_cost: 300
+research_time: 3520.0
+ability_id: 1191
+, upgrade_id: 59
+name: "ZergMissileWeaponsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 1192
+, upgrade_id: 60
+name: "ZergMissileWeaponsLevel2"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 3040.0
+ability_id: 1193
+, upgrade_id: 61
+name: "ZergMissileWeaponsLevel3"
+mineral_cost: 200
+vespene_cost: 200
+research_time: 3520.0
+ability_id: 1194
+, upgrade_id: 62
+name: "overlordspeed"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 960.0
+ability_id: 1223
+, upgrade_id: 63
+name: "overlordtransport"
+mineral_cost: 200
+vespene_cost: 200
+research_time: 2080.0
+ability_id: 1224
+, upgrade_id: 64
+name: "Burrow"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1600.0
+ability_id: 1225
+, upgrade_id: 65
+name: "zerglingattackspeed"
+mineral_cost: 200
+vespene_cost: 200
+research_time: 2080.0
+ability_id: 1252
+, upgrade_id: 66
+name: "zerglingmovementspeed"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1760.0
+ability_id: 1253
+, upgrade_id: 67
+name: "hydraliskspeed"
+, upgrade_id: 68
+name: "ZergFlyerWeaponsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 1312
+, upgrade_id: 69
+name: "ZergFlyerWeaponsLevel2"
+mineral_cost: 175
+vespene_cost: 175
+research_time: 3040.0
+ability_id: 1313
+, upgrade_id: 70
+name: "ZergFlyerWeaponsLevel3"
+mineral_cost: 250
+vespene_cost: 250
+research_time: 3520.0
+ability_id: 1314
+, upgrade_id: 71
+name: "ZergFlyerArmorsLevel1"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 2560.0
+ability_id: 1315
+, upgrade_id: 72
+name: "ZergFlyerArmorsLevel2"
+mineral_cost: 225
+vespene_cost: 225
+research_time: 3040.0
+ability_id: 1316
+, upgrade_id: 73
+name: "ZergFlyerArmorsLevel3"
+mineral_cost: 300
+vespene_cost: 300
+research_time: 3520.0
+ability_id: 1317
+, upgrade_id: 74
+name: "InfestorEnergyUpgrade"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1280.0
+ability_id: 1454
+, upgrade_id: 75
+name: "CentrificalHooks"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 1482
+, upgrade_id: 76
+name: "BattlecruiserEnableSpecializations"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 960.0
+ability_id: 1532
+, upgrade_id: 77
+name: "BattlecruiserBehemothReactor"
+, upgrade_id: 78
+name: "ProtossAirWeaponsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 1562
+, upgrade_id: 79
+name: "ProtossAirWeaponsLevel2"
+mineral_cost: 175
+vespene_cost: 175
+research_time: 3040.0
+ability_id: 1563
+, upgrade_id: 80
+name: "ProtossAirWeaponsLevel3"
+mineral_cost: 250
+vespene_cost: 250
+research_time: 3520.0
+ability_id: 1564
+, upgrade_id: 81
+name: "ProtossAirArmorsLevel1"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 2560.0
+ability_id: 1565
+, upgrade_id: 82
+name: "ProtossAirArmorsLevel2"
+mineral_cost: 225
+vespene_cost: 225
+research_time: 3040.0
+ability_id: 1566
+, upgrade_id: 83
+name: "ProtossAirArmorsLevel3"
+mineral_cost: 300
+vespene_cost: 300
+research_time: 3520.0
+ability_id: 1567
+, upgrade_id: 84
+name: "WarpGateResearch"
+mineral_cost: 50
+vespene_cost: 50
+research_time: 2560.0
+ability_id: 1568
+, upgrade_id: 85
+name: "haltech"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1280.0
+ability_id: 1571
+, upgrade_id: 86
+name: "Charge"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2240.0
+ability_id: 1592
+, upgrade_id: 87
+name: "BlinkTech"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 2720.0
+ability_id: 1593
+, upgrade_id: 88
+name: "AnabolicSynthesis"
+, upgrade_id: 89
+name: "ObverseIncubation"
+, upgrade_id: 90
+name: "VikingJotunBoosters"
+, upgrade_id: 91
+name: "OrganicCarapace"
+, upgrade_id: 92
+name: "InfestorPeristalsis"
+, upgrade_id: 93
+name: "AbdominalFortitude"
+, upgrade_id: 94
+name: "HydraliskSpeedUpgrade"
+, upgrade_id: 95
+name: "BanelingBurrowMove"
+, upgrade_id: 96
+name: "CombatDrugs"
+, upgrade_id: 97
+name: "StrikeCannons"
+, upgrade_id: 98
+name: "TransformationServos"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 763
+, upgrade_id: 99
+name: "PhoenixRangeUpgrade"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1440.0
+ability_id: 46
+, upgrade_id: 100
+name: "TempestRangeUpgrade"
+mineral_cost: 200
+vespene_cost: 200
+research_time: 1760.0
+ability_id: 47
+, upgrade_id: 101
+name: "NeuralParasite"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 1455
+, upgrade_id: 102
+name: "LocustLifetimeIncrease"
+mineral_cost: 200
+vespene_cost: 200
+research_time: 1920.0
+ability_id: 1456
+, upgrade_id: 103
+name: "UltraliskBurrowChargeUpgrade"
+, upgrade_id: 104
+name: "OracleEnergyUpgrade"
+, upgrade_id: 105
+name: "RestoreShields"
+, upgrade_id: 106
+name: ""
+, upgrade_id: 107
+name: ""
+, upgrade_id: 108
+name: ""
+, upgrade_id: 109
+name: "ReaperJump"
+, upgrade_id: 110
+name: "IncreasedRange"
+, upgrade_id: 111
+name: "ZergBurrowMove"
+, upgrade_id: 112
+name: "AnionPulseCrystals"
+, upgrade_id: 113
+name: "TerranVehicleAndShipWeaponsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 2294
+, upgrade_id: 114
+name: "TerranVehicleAndShipWeaponsLevel2"
+mineral_cost: 175
+vespene_cost: 175
+research_time: 3040.0
+ability_id: 2295
+, upgrade_id: 115
+name: "TerranVehicleAndShipWeaponsLevel3"
+mineral_cost: 250
+vespene_cost: 250
+research_time: 3520.0
+ability_id: 2296
+, upgrade_id: 116
+name: "TerranVehicleAndShipArmorsLevel1"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2560.0
+ability_id: 2297
+, upgrade_id: 117
+name: "TerranVehicleAndShipArmorsLevel2"
+mineral_cost: 175
+vespene_cost: 175
+research_time: 3040.0
+ability_id: 2298
+, upgrade_id: 118
+name: "TerranVehicleAndShipArmorsLevel3"
+mineral_cost: 250
+vespene_cost: 250
+research_time: 3520.0
+ability_id: 2299
+, upgrade_id: 119
+name: "FlyingLocusts"
+, upgrade_id: 120
+name: "RoachSupply"
+mineral_cost: 200
+vespene_cost: 200
+research_time: 2080.0
+ability_id: 218
+, upgrade_id: 121
+name: "ImmortalRevive"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1280.0
+ability_id: 1099
+, upgrade_id: 122
+name: "DrillClaws"
+mineral_cost: 75
+vespene_cost: 75
+research_time: 1760.0
+ability_id: 764
+, upgrade_id: 123
+name: "CycloneLockOnRangeUpgrade"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 765
+, upgrade_id: 124
+name: "CycloneAirUpgrade"
+, upgrade_id: 125
+name: "LiberatorMorph"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 800
+, upgrade_id: 126
+name: "AdeptShieldUpgrade"
+, upgrade_id: 127
+name: "LurkerRange"
+mineral_cost: 200
+vespene_cost: 200
+research_time: 1760.0
+ability_id: 1286
+, upgrade_id: 128
+name: "ImmortalBarrier"
+, upgrade_id: 129
+name: "AdeptKillBounce"
+, upgrade_id: 130
+name: "AdeptPiercingAttack"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2240.0
+ability_id: 1594
+, upgrade_id: 131
+name: "CinematicMode"
+, upgrade_id: 132
+name: "CursorDebug"
+, upgrade_id: 133
+name: "MagFieldLaunchers"
+, upgrade_id: 134
+name: "EvolveGroovedSpines"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1600.0
+ability_id: 1282
+, upgrade_id: 135
+name: "EvolveMuscularAugments"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1600.0
+ability_id: 1283
+, upgrade_id: 136
+name: "BansheeSpeed"
+mineral_cost: 200
+vespene_cost: 200
+research_time: 2720.0
+ability_id: 799
+, upgrade_id: 137
+name: "MedivacRapidDeployment"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1920.0
+ability_id: 802
+, upgrade_id: 138
+name: "RavenRecalibratedExplosives"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 803
+, upgrade_id: 139
+name: "MedivacIncreaseSpeedBoost"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1280.0
+ability_id: 804
+, upgrade_id: 140
+name: "LiberatorAGRangeUpgrade"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 805
+, upgrade_id: 141
+name: "DarkTemplarBlinkUpgrade"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 2720.0
+ability_id: 2720
+, upgrade_id: 142
+name: "RavagerRange"
+, upgrade_id: 143
+name: "RavenDamageUpgrade"
+, upgrade_id: 144
+name: "CycloneLockOnDamageUpgrade"
+, upgrade_id: 145
+name: ""
+, upgrade_id: 146
+name: ""
+, upgrade_id: 147
+name: ""
+, upgrade_id: 148
+name: ""
+, upgrade_id: 149
+name: ""
+, upgrade_id: 150
+name: ""
+, upgrade_id: 151
+name: ""
+, upgrade_id: 152
+name: ""
+, upgrade_id: 153
+name: ""
+, upgrade_id: 154
+name: ""
+, upgrade_id: 155
+name: ""
+, upgrade_id: 156
+name: ""
+, upgrade_id: 157
+name: ""
+, upgrade_id: 158
+name: ""
+, upgrade_id: 159
+name: ""
+, upgrade_id: 160
+name: ""
+, upgrade_id: 161
+name: ""
+, upgrade_id: 162
+name: ""
+, upgrade_id: 163
+name: ""
+, upgrade_id: 164
+name: ""
+, upgrade_id: 165
+name: ""
+, upgrade_id: 166
+name: ""
+, upgrade_id: 167
+name: ""
+, upgrade_id: 168
+name: ""
+, upgrade_id: 169
+name: ""
+, upgrade_id: 170
+name: ""
+, upgrade_id: 171
+name: ""
+, upgrade_id: 172
+name: ""
+, upgrade_id: 173
+name: ""
+, upgrade_id: 174
+name: ""
+, upgrade_id: 175
+name: ""
+, upgrade_id: 176
+name: ""
+, upgrade_id: 177
+name: ""
+, upgrade_id: 178
+name: ""
+, upgrade_id: 179
+name: ""
+, upgrade_id: 180
+name: ""
+, upgrade_id: 181
+name: ""
+, upgrade_id: 182
+name: ""
+, upgrade_id: 183
+name: ""
+, upgrade_id: 184
+name: ""
+, upgrade_id: 185
+name: ""
+, upgrade_id: 186
+name: ""
+, upgrade_id: 187
+name: ""
+, upgrade_id: 188
+name: ""
+, upgrade_id: 189
+name: ""
+, upgrade_id: 190
+name: ""
+, upgrade_id: 191
+name: ""
+, upgrade_id: 192
+name: ""
+, upgrade_id: 193
+name: ""
+, upgrade_id: 194
+name: ""
+, upgrade_id: 195
+name: ""
+, upgrade_id: 196
+name: ""
+, upgrade_id: 197
+name: ""
+, upgrade_id: 198
+name: ""
+, upgrade_id: 199
+name: ""
+, upgrade_id: 200
+name: ""
+, upgrade_id: 201
+name: ""
+, upgrade_id: 202
+name: ""
+, upgrade_id: 203
+name: ""
+, upgrade_id: 204
+name: ""
+, upgrade_id: 205
+name: ""
+, upgrade_id: 206
+name: ""
+, upgrade_id: 207
+name: ""
+, upgrade_id: 208
+name: ""
+, upgrade_id: 209
+name: ""
+, upgrade_id: 210
+name: ""
+, upgrade_id: 211
+name: ""
+, upgrade_id: 212
+name: ""
+, upgrade_id: 213
+name: ""
+, upgrade_id: 214
+name: ""
+, upgrade_id: 215
+name: ""
+, upgrade_id: 216
+name: ""
+, upgrade_id: 217
+name: ""
+, upgrade_id: 218
+name: ""
+, upgrade_id: 219
+name: ""
+, upgrade_id: 220
+name: ""
+, upgrade_id: 221
+name: ""
+, upgrade_id: 222
+name: ""
+, upgrade_id: 223
+name: ""
+, upgrade_id: 224
+name: ""
+, upgrade_id: 225
+name: ""
+, upgrade_id: 226
+name: ""
+, upgrade_id: 227
+name: ""
+, upgrade_id: 228
+name: ""
+, upgrade_id: 229
+name: ""
+, upgrade_id: 230
+name: ""
+, upgrade_id: 231
+name: ""
+, upgrade_id: 232
+name: ""
+, upgrade_id: 233
+name: ""
+, upgrade_id: 234
+name: ""
+, upgrade_id: 235
+name: ""
+, upgrade_id: 236
+name: ""
+, upgrade_id: 237
+name: ""
+, upgrade_id: 238
+name: ""
+, upgrade_id: 239
+name: ""
+, upgrade_id: 240
+name: ""
+, upgrade_id: 241
+name: ""
+, upgrade_id: 242
+name: ""
+, upgrade_id: 243
+name: ""
+, upgrade_id: 244
+name: ""
+, upgrade_id: 245
+name: ""
+, upgrade_id: 246
+name: ""
+, upgrade_id: 247
+name: ""
+, upgrade_id: 248
+name: ""
+, upgrade_id: 249
+name: ""
+, upgrade_id: 250
+name: ""
+, upgrade_id: 251
+name: ""
+, upgrade_id: 252
+name: ""
+, upgrade_id: 253
+name: ""
+, upgrade_id: 254
+name: ""
+, upgrade_id: 255
+name: ""
+, upgrade_id: 256
+name: ""
+, upgrade_id: 257
+name: ""
+, upgrade_id: 258
+name: ""
+, upgrade_id: 259
+name: ""
+, upgrade_id: 260
+name: ""
+, upgrade_id: 261
+name: ""
+, upgrade_id: 262
+name: ""
+, upgrade_id: 263
+name: ""
+, upgrade_id: 264
+name: ""
+, upgrade_id: 265
+name: ""
+, upgrade_id: 266
+name: ""
+, upgrade_id: 267
+name: ""
+, upgrade_id: 268
+name: ""
+, upgrade_id: 269
+name: ""
+, upgrade_id: 270
+name: ""
+, upgrade_id: 271
+name: ""
+, upgrade_id: 272
+name: ""
+, upgrade_id: 273
+name: ""
+, upgrade_id: 274
+name: ""
+, upgrade_id: 275
+name: ""
+, upgrade_id: 276
+name: ""
+, upgrade_id: 277
+name: ""
+, upgrade_id: 278
+name: ""
+, upgrade_id: 279
+name: ""
+, upgrade_id: 280
+name: ""
+, upgrade_id: 281
+name: ""
+, upgrade_id: 282
+name: ""
+, upgrade_id: 283
+name: ""
+, upgrade_id: 284
+name: ""
+, upgrade_id: 285
+name: ""
+, upgrade_id: 286
+name: ""
+, upgrade_id: 287
+name: ""
+, upgrade_id: 288
+name: "VoidRaySpeedUpgrade"
+, upgrade_id: 289
+name: "SmartServos"
+mineral_cost: 100
+vespene_cost: 100
+research_time: 1760.0
+ability_id: 766
+, upgrade_id: 290
+name: "ArmorPiercingRockets"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 767
+, upgrade_id: 291
+name: "CycloneRapidFireLaunchers"
+mineral_cost: 75
+vespene_cost: 75
+research_time: 1760.0
+ability_id: 768
+, upgrade_id: 292
+name: "RavenEnhancedMunitions"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1760.0
+ability_id: 806
+, upgrade_id: 293
+name: "DiggingClaws"
+mineral_cost: 150
+vespene_cost: 150
+research_time: 1200.0
+ability_id: 3709
+]
