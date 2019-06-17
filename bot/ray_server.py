@@ -29,7 +29,7 @@ SERVER_ADDRESS = "localhost"
 SERVER_PORT = 9900
 CHECKPOINT_FILE = "last_checkpoint.out"
 
-ALGORITHM = "DQN" # APEX
+ALGORITHM = "APEX" # "DQN"
 
 
 class CartpoleServing(ExternalEnv):
@@ -125,38 +125,52 @@ def main(argv):
         dqn = ApexTrainer(
             env="srv",
             config={
-                #Ape-X for gpu...
-                "optimizer_class": "AsyncReplayOptimizer",
-                "schedule_max_timesteps": 100000,
-                # "n_step": 3, # warum haben wir den mist hier angegegeben?!!?!?
-                "target_network_update_freq": 500000,
-                "timesteps_per_iteration": 25000,
-                "per_worker_exploration": True,
-                "worker_side_prioritization": True,
-                "min_iter_time_s": 30,
-                # Learning rate - defaults to 5e-4
-                "lr": 0.0001,
-                # Use a single process to avoid needing to set up a load balancer
-                "num_workers": num_workers,
-                # mehrere Threads fuer worker! fuer debugging auf false setzen
-                # "sample_async": True,
-                #"grad_clip": 0.5,
+                # model
                 "model": model,
                 "gamma": 0.99,
                 "noisy": False,
                 "num_gpus": 1,
+
+                # evaluation
+                # everything default, see dqn.py
+
+                #exploration
+                "target_network_update_freq": 500000,
+                # rest: everything default, see dqn.py
+
+                #replay buffer
+                # Size of the replay buffer. Note that if async_updates is set, then
+                # each worker will have a replay buffer of this size. default 50000
+                "buffer_size": 2000000,
+                # If True prioritized replay buffer will be used.
+                "prioritized_replay": True,
+                # here are many parameters, untouched from me (see dqn.py)
+
+                # Optimization
+                # Learning rate - defaults to 5e-4
+                "lr": 0.0001,
                 # Size of rollout batch
                 # Default sample batch size (unroll length). Batches of this size are
                 # collected from workers until train_batch_size is met. When using
                 # multiple envs per worker, this is multiplied by num_envs_per_worker.
-                "sample_batch_size": 512,
+                "sample_batch_size": 1024,
                 # Training batch size, if applicable. Should be >= sample_batch_size.
                 # Samples batches will be concatenated together to this size for training.
-                "train_batch_size": 1024,
-                # Size of the replay buffer. Note that if async_updates is set, then
-                # each worker will have a replay buffer of this size. default 50000
-                "buffer_size": 2000000,
+                "train_batch_size": 2048,
+                # How many steps of the model to sample before learning starts
                 "learning_starts": 50000,
+
+                #parallelism
+                "num_workers": num_workers,
+                # distribute epsilon over workers (default for apex)
+                "per_worker_exploration": True,
+                # determine per worker which experience should be prioritized, before giving those to the
+                # shared experience memory
+                "worker_side_prioritization": True,
+
+                # "schedule_max_timesteps": 100000, # was tut es?
+                # "timesteps_per_iteration": 25000, # was tut es?
+                # "min_iter_time_s": 30, # was tut es?
             })
     else:
         dqn = DQNTrainer(
