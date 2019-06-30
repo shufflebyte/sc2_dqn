@@ -204,8 +204,8 @@ def main(argv):
                 # Learning rate - defaults to 5e-4
                 "lr": 0.0001,
                 # Update the replay buffer with this many samples at once. Note that
-                # this setting applies per-worker if num_workers > 1. (agent history length)
-                "sample_batch_size": 1024,
+                # this setting applies per-worker if num_workers > 1.
+                #"sample_batch_size": 1024,
                 # How many steps of the model to sample before learning starts
                 "learning_starts": 50000,
                 # Size of a batched sampled from replay buffer for training. Note that
