@@ -185,6 +185,11 @@ def main(argv):
                 "noisy": False,
                 "num_gpus": 1,
 
+                # Whether to use dueling dqn
+                "dueling": False,
+                # Whether to use double dqn
+                "double_q": False,
+
                 # evaluation
                 # everything default, see dqn.py
 
