@@ -63,5 +63,5 @@ done
 echo "[START] Great Success!"
 
 # start tensorboard automatically
-echo screen -S tensorboard_$PORT_TENSORBOARD -d -m bash -c "tensorboard --logdir=~/ray_results --port=$PORT_TENSORBOARD; bash"
-screen -S tensorboard_$PORT_TENSORBOARD -d -m bash -c "tensorboard --logdir=~/ray_results --port=$PORT_TENSORBOARD; bash"
+echo screen -S tensorboard_$PORT_TENSORBOARD -d -m bash -c "export LC_ALL=C; conda activate sc2; tensorboard --logdir=~/ray_results --port=$PORT_TENSORBOARD; bash"
+screen -S tensorboard_$PORT_TENSORBOARD -d -m bash -c "export LC_ALL=C; conda activate sc2; tensorboard --logdir=~/ray_results --port=$PORT_TENSORBOARD; bash"

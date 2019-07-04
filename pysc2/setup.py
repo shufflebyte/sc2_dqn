@@ -72,7 +72,7 @@ setup(
         'six',
         'sk-video',
         'websocket-client',
-        'whichcraft',
+        'whichcraft', 'matplotlib', 'pandas'
     ],
     entry_points={
         'console_scripts': [
