@@ -44,3 +44,14 @@ echo "use: ls -Rltr | grep checkpoint"
 echo "to find the latest checkpoints in the subfolders"
 echo "use: scp -r $USR_LINUX@$SERVER_IP:${SOURCE}experimentId/checkpoint_XXX ${TARGET}experimentId/"
 echo "to copy the latest checkpoints u wish to save"
+
+# delete old shit
+ANSWER="no"
+echo "shall i delete the old shit? [yes|No]"
+read ANSWER
+
+if [ "$ANSWER" == "yes" ]; then
+echo "Wart ma kurz ..."
+ssh $USR_LINUX@$SERVER_IP "cd $SOURCE/; rm -r *; cd /home/$USR_LINUX/sc2_dqn/bot/scripts/; rm last_checkpoint.out"
+echo "Done deleting"
+fi
