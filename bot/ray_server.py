@@ -24,12 +24,19 @@ from utils.policy_server import PolicyServer
 from ray.tune.logger import pretty_print
 from ray.tune.registry import register_env
 
+LINUX_USER = "fsoulier"
 
 SERVER_ADDRESS = "localhost"
-SERVER_PORT = 9900
+if LINUX_USER == "fsoulier":
+    SERVER_PORT = 9900
+elif LINUX_USER == "trump1":
+    SERVER_PORT = 9700
+else:
+    SERVER_PORT = 9900
+
 CHECKPOINT_FILE = "last_checkpoint.out"
 
-ALGORITHM = "APEX" # "DQN"
+ALGORITHM = "DQN" # "DQN"
 
 
 class CartpoleServing(ExternalEnv):
@@ -153,10 +160,10 @@ def main(argv):
                 # Default sample batch size (unroll length). Batches of this size are
                 # collected from workers until train_batch_size is met. When using
                 # multiple envs per worker, this is multiplied by num_envs_per_worker.
-                "sample_batch_size": 1024,
+                "sample_batch_size": 4,
                 # Training batch size, if applicable. Should be >= sample_batch_size.
                 # Samples batches will be concatenated together to this size for training.
-                "train_batch_size": 2048,
+                "train_batch_size": 64,
                 # How many steps of the model to sample before learning starts
                 "learning_starts": 50000,
 
