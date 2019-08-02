@@ -1,7 +1,7 @@
 # this script rsyncs the results from ray but not the checkpoints. you need to copy those you want manually
 
 # conig
-USR_LINUX="fsoulier"
+USR_LINUX="trump1"
 USR_MAC="florian"
 SERVER_IP="139.6.237.137"
 

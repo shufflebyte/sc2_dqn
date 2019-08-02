@@ -51,7 +51,11 @@ plt.plot(df_zweiter_satz, label='zweiter DS')
 
 
 # combine data to one sheet
-df_alle = df_erster_satz
+df_alle = pd.DataFrame()
+#experimental ################
+df_alle['B1'] = df_erster_satz['B']
+# df_alle = df_erster_satz
+############### ende ############
 df_alle['B2'] = df_zweiter_satz['B']
 
 # lösche alle Samples, die nicht jeder Datensatz hat
