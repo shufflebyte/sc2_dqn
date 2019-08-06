@@ -188,14 +188,14 @@ def main(argv):
                 # "sample_async": True,
                 # "grad_clip": 0.5,
                 "model": model,
-                "gamma": 0.99,
+                "gamma": 0.8,
                 "noisy": False,
                 "num_gpus": 1,
 
                 # Whether to use dueling dqn
-                "dueling": False,
+                "dueling": True,
                 # Whether to use double dqn
-                "double_q": False,
+                "double_q": True,
 
                 # evaluation
                 # everything default, see dqn.py
@@ -209,12 +209,12 @@ def main(argv):
                 # each worker will have a replay buffer of this size. default 50000
                 "buffer_size": 2000000,
                 # If True prioritized replay buffer will be used.
-                "prioritized_replay": False,
+                "prioritized_replay": True,
                 # here are many parameters, untouched from me (see dqn.py)
 
                 # Optimization
                 # Learning rate - defaults to 5e-4
-                "lr": 0.0001,
+                "lr": 0.01,
                 # Update the replay buffer with this many samples at once. Note that
                 # this setting applies per-worker if num_workers > 1.
                 #"sample_batch_size": 1024,
@@ -224,7 +224,7 @@ def main(argv):
                 # if async_updates is set, then each worker returns gradients for a
                 # batch of this size. (Minibatch size) hould be >= sample_batch_size
                 # Samples batches will be concatenated together to this size for training.
-                "train_batch_size": 2048,
+                "train_batch_size": 256,
 
                 # parallelism
                 # Number of workers for collecting samples with. This only makes sense
@@ -233,8 +233,8 @@ def main(argv):
                 "num_workers": num_workers,
                 # distribute epsilon over workers
                 "per_worker_exploration": True,
-                # compute worker side prioritazation (False, because in DQN this was not ipmlemented)
-                "worker_side_prioritization": False,
+                # compute worker side prioritazation (DQN: False, DDQN: True, APEX: True!!)
+                "worker_side_prioritization": True,
             })
 
     # write policy graph to tensorboard (for debugging purposes)
