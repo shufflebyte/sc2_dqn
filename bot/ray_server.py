@@ -36,7 +36,7 @@ else:
 
 CHECKPOINT_FILE = "last_checkpoint.out"
 
-ALGORITHM = "DQN" # "DQN"
+ALGORITHM = "APEX" # "DQN"
 
 
 class CartpoleServing(ExternalEnv):
@@ -134,7 +134,7 @@ def main(argv):
             config={
                 # model
                 "model": model,
-                "gamma": 0.99,
+                "gamma": 0.8,
                 "noisy": False,
                 "num_gpus": 1,
 
@@ -155,7 +155,7 @@ def main(argv):
 
                 # Optimization
                 # Learning rate - defaults to 5e-4
-                "lr": 0.0001,
+                "lr": 0.01,
                 # Size of rollout batch
                 # Default sample batch size (unroll length). Batches of this size are
                 # collected from workers until train_batch_size is met. When using
@@ -163,7 +163,7 @@ def main(argv):
                 "sample_batch_size": 4,
                 # Training batch size, if applicable. Should be >= sample_batch_size.
                 # Samples batches will be concatenated together to this size for training.
-                "train_batch_size": 64,
+                "train_batch_size": 256,
                 # How many steps of the model to sample before learning starts
                 "learning_starts": 50000,
 
