@@ -93,6 +93,15 @@ results = [
     {'file': '/Users/florian/ray_results/DQN178/DQN_srv_2019-08-04_08-49-17sa52da31/progress.csv', 'label': {'search3': "lr = 0.01"}},
     {'file': '/Users/florian/ray_results/DQN179/DQN_srv_2019-08-04_12-37-12qikscbn0/progress.csv', 'label': {'search3': "lr = 0.01"}},
     {'file': '/Users/florian/ray_results/DQN180/DQN_srv_2019-08-04_12-38-31yt7xnx5l/progress.csv', 'label': {'search3': "lr = 0.01"}},
+    {'file': '/Users/florian/ray_results/DQN181/DQN_srv_2019-08-06_20-25-04qxj50i0l/progress.csv', 'label': {'search4': "DDQN"}},
+    {'file': '/Users/florian/ray_results/DQN182/DQN_srv_2019-08-06_20-26-10w46a65r9/progress.csv', 'label': {'search4': "DDQN"}},
+    {'file': '/Users/florian/ray_results/DQN183/DQN_srv_2019-08-07_07-39-039xnoafz6/progress.csv', 'label': {'search4': "DDQN"}},
+    {'file': '/Users/florian/ray_results/DQN184/DQN_srv_2019-08-07_07-40-10ud0kzwkd/progress.csv', 'label': {'search4': "DDQN"}},
+    {'file': '/Users/florian/ray_results/DQN185/DQN_srv_2019-08-07_16-13-17qgxv48_d/progress.csv', 'label': {'search4': "DDQN"}},
+    {'file': '/Users/florian/ray_results/DQN186/DQN_srv_2019-08-07_16-13-59y5irq9c6/progress.csv', 'label': {'search4': "DDQN"}},
+    {'file': '/Users/florian/ray_results/DQN187/DQN_srv_2019-08-07_22-21-04d3rs4sat/progress.csv', 'label': {'search4': "DDQN"}},
+    {'file': '/Users/florian/ray_results/DQN188/DQN_srv_2019-08-07_22-18-03mcmrq2wl/progress.csv', 'label': {'search4': "DDQN"}},
+    {'file': '/Users/florian/ray_results/DQN189/DQN_srv_2019-08-08_09-04-59cr16l5co/progress.csv', 'label': {'search4': "DDQN"}},
 ]
 
 
@@ -113,13 +122,9 @@ x = np.linspace(0, 5, 100)
 y = 0 * x + 147
 
 # outer loop for calculating the averages of several curves
-for p in range(0, 3):
+for p in range(0,1):
     if p == 0:
-        parameter = 'lr = 0.0001'
-    if p == 1:
-        parameter = 'lr = 0.001'
-    if p == 2:
-        parameter = 'lr = 0.01'
+        parameter = 'DDQN'
 
     # use counter for renaming columns in dataFrame
     i = 0
@@ -128,7 +133,7 @@ for p in range(0, 3):
 
     #inner loop for processing every TimeSeries
     for result in results:
-        if 'search3' in result['label'] and result['label']['search3'] == parameter:
+        if 'search4' in result['label'] and result['label']['search4'] == parameter:
             print("Processing dataset ", i)
 
             # read it
