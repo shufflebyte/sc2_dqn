@@ -116,8 +116,6 @@ results = [
 ]
 
 
-
-
 # the columns indices for the information:
 # rewards_mean: 2
 # rewards_max: 0
@@ -133,9 +131,9 @@ x = np.linspace(0, 5, 100)
 y = 0 * x + 147
 
 # outer loop for calculating the averages of several curves
-for p in range(0, 1):
+for p in range(0,1):
     if p == 0:
-        parameter = 'DDQN'
+        parameter = 'APEX'
 
     # use counter for renaming columns in dataFrame
     i = 0
@@ -144,7 +142,7 @@ for p in range(0, 1):
 
     #inner loop for processing every TimeSeries
     for result in results:
-        if 'search4' in result['label'] and result['label']['search4'] == parameter:
+        if 'search5' in result['label'] and result['label']['search5'] == parameter:
             print("Processing dataset ", i)
 
             # read it
@@ -155,7 +153,8 @@ for p in range(0, 1):
                              names=['reward_mean', 'seconds']
                              )
             print(df)
-            plt.plot(df['seconds'] / 60 / 60, df['reward_mean'], label='__nolegend__')
+
+            plt.plot(df['seconds'] / 60 / 60, df['reward_mean'], label='_nolegend_')
 
     plt.plot(x, y, linestyle='--', label='human reference')
 

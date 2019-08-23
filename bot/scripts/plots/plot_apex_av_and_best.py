@@ -118,59 +118,106 @@ results = [
 
 
 
-# the columns indices for the information:
 # rewards_mean: 2
 # rewards_max: 0
 # iterations: 15
 # timesteps: 13
 # seconds: 20
-
 # find the paths in ray_results:
 # find . -name \progress.csv -print | grep DQN
+# print(results[0]['file'], results[0]['label']['search1'])
+
+fig = plt.figure()
 
 # generate human expert data
 x = np.linspace(0, 5, 100)
-y = 0 * x + 147
+y = 0*x+147
+plt.plot(x, y, linestyle='--', label='human reference')
 
-# outer loop for calculating the averages of several curves
-for p in range(0, 1):
-    if p == 0:
-        parameter = 'DDQN'
 
-    # use counter for renaming columns in dataFrame
-    i = 0
+# create empty df for all data
+df_all_data = pd.DataFrame()
 
-    fig = plt.figure()
+# mean - nummerating
+i = 0
 
-    #inner loop for processing every TimeSeries
-    for result in results:
-        if 'search4' in result['label'] and result['label']['search4'] == parameter:
-            print("Processing dataset ", i)
+# DDQN
+parameter = 'APEX'
 
-            # read it
-            df = pd.read_csv(filepath_or_buffer=result['file'],
-                             delimiter=',',
-                             header=1,
-                             usecols=[2, 20],
-                             names=['reward_mean', 'seconds']
-                             )
-            print(df)
-            plt.plot(df['seconds'] / 60 / 60, df['reward_mean'], label='__nolegend__')
+# inner loop for processing every TimeSeries
+for result in results:
+    if 'search5' in result['label'] and result['label']['search5'] == parameter:
+        print("Processing dataset ", i)
 
-    plt.plot(x, y, linestyle='--', label='human reference')
+        # read it
+        df = pd.read_csv(filepath_or_buffer=result['file'],
+                         delimiter=',',
+                         header=1,
+                         usecols=[2, 20],
+                         names=['mean'+str(i), 'S', ]
+                         )
 
-    # Now modify Matplotlib for a consistent scaling and view
-    x1, x2, y1, y2 = plt.axis()
-    plt.axis((x1, 3, 0, 180))
-    x1, x2 = plt.xlim()
-    plt.xlim([0, x2])
-    y1, y2 = plt.ylim()
-    plt.ylim([0, y2])
+        # get the latest timestamp (last row, column "S" where the seconds of progress.csv are stored
+        n = int(df['S'].iloc[-1])
 
-    plt.title(parameter)
-    plt.xlabel("time in hours")
-    plt.ylabel("mean reward")
+        # since the smallest time steps in the measurements are 2.5 to 3 seconds and the
+        # largest time steps are something like 30 seconds, an sampling with 1 second
+        # large time steps will be more than enough
 
-    plt.legend()
-    plt.show()
+        # in the following the oversampling_factor is multiplied the number of measurements
+        # to create an over/undersampling
+        oversampling_factor = 1
+        sample_points = np.linspace(0, n, oversampling_factor*n+1)
 
+        # create a df with only sample points, call it only one letter, because there fucks something up..
+        df_sample_points = pd.DataFrame(sample_points, columns=list('S'))
+
+        # append new index column: Therefore ignore indexing (because they will not be unique, also do sorting
+        # to make it be sorted :-p , also because the standard behavior will be changed and will be unsorted in
+        # future versions of pandas..
+        df_sampled = df.append(df_sample_points, ignore_index=True, sort=True)
+        df_sampled = df_sampled.sort_values(by="S")
+        # after sorting, interpolate the NaNs between the real sampling points
+        df_sampled = df_sampled.interpolate(method='linear', axis=0)
+        # let S be the index (for concatenation AND for plotting)
+        df_sampled = df_sampled.set_index("S")
+        # concat the new timeSeries with the others
+        df_all_data = pd.concat([df_all_data, df_sampled], axis=1, sort=True, join='outer')
+    # increase i for the naming of the columns with the Y-Values
+    i += 1
+# delete "any" NaNs, that are left and do it inplace (do not make a copy of dataFrame)
+df_all_data.dropna(how='any', inplace=True)
+# calculate the mean for the 10 series and create a mean column, but skip non-numerical and NaNs
+df_all_data['mean'] = df_all_data.mean(numeric_only=True, skipna=True, axis=1, )
+
+plt.plot(df_all_data.index.values/60/60, df_all_data['mean'], label='Ape-x DQN average')
+# print(df_all_data)
+
+# add best apex graph
+file = '/Users/florian/ray_results/DQN194/APEX_srv_2019-08-08_16-14-510pppdq9p/progress.csv'
+print("Processing dataset ")
+
+# read it
+df = pd.read_csv(filepath_or_buffer=file,
+                 delimiter=',',
+                 header=1,
+                 usecols=[0, 20],
+                 names=['reward_mean', 'seconds']
+                 )
+print(df)
+
+plt.plot(df['seconds'] / 60 / 60, df['reward_mean'], label='Ape-x DQN best')
+
+# Now modify Matplotlib for a consistens scaling and view
+x1, x2, y1, y2 = plt.axis()
+plt.axis((x1, 3, 0, 180))
+x1, x2 = plt.xlim()
+plt.xlim([0, x2])
+y1, y2 = plt.ylim()
+plt.ylim([0, y2])
+
+plt.xlabel("time in hours")
+plt.ylabel("mean reward")
+
+plt.legend()
+plt.show()
