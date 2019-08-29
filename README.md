@@ -61,7 +61,7 @@ If you have no NVIDIA GPU present, you need to configure that in ray_server.py. 
 
 
 ## The neural network architecture
-![neural network](https://github.com/shufflebyte/sc2_dqn/blob/master/doc/neural_network.pdf "Neural Netowork")
+![neural network](https://github.com/shufflebyte/sc2_dqn/blob/master/doc/neural_network.png "Neural Netowork")
 
 ## The result of tuned DQN with human reference
 ![neural network](https://github.com/shufflebyte/sc2_dqn/blob/master/doc/dqn_result.png "Result of tuned DQN")
