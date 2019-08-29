@@ -57,11 +57,11 @@ If you have no NVIDIA GPU present, you need to configure that in ray_server.py. 
 **nvidia-smi** is a tool to show the workload on your NVIDIA GPUs, **top** shows the workload on your CPUs and RAM. 
 
 ## Scenario: BuildMarines
-![scenario](https://github.com/shufflebyte/sc2_dqn/doc/scenario_snipped.png "Scenario BuildMarines")
+![scenario](https://github.com/shufflebyte/sc2_dqn/blob/master/doc/scenario_snipped.png "Scenario BuildMarines")
 
 
 ## The neural network architecture
-![neural network](https://github.com/shufflebyte/sc2_dqn/doc/neural_network.pdf "Neural Netowork")
+![neural network](https://github.com/shufflebyte/sc2_dqn/blob/master/doc/neural_network.pdf "Neural Netowork")
 
 ## The result of tuned DQN with human reference
-![neural network](https://github.com/shufflebyte/sc2_dqn/doc/dqn_result.png "Result of tuned DQN")
+![neural network](https://github.com/shufflebyte/sc2_dqn/blob/master/doc/dqn_result.png "Result of tuned DQN")
